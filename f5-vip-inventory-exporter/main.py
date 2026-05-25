@@ -10,7 +10,7 @@ f5 = {
 }
 
 connection = ConnectHandler(**f5)
-output = connection.send_command("list ltm virtual one-line")
+output = connection.send_command("tmsh list ltm virtual one-line")
 
 connection.disconnect()
 
